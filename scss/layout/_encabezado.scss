@@ -1,0 +1,40 @@
+.color__nav{
+    background-color: #53ca98;
+    @extend .centrar;
+}
+.barraNavegacion{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size:0;
+    width: 100%;
+    @extend .centrar;
+
+    li{
+        background-color: #53ca98;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        padding: 2px;
+        margin: 3px;
+        justify-items: space-between;
+        align-items: center;
+        width: 16,66%;
+        font-size: 21.5px;
+        @extend .centrar;
+    a{
+        color: white;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #02574293;
+        display:flex;
+        flex-wrap:wrap;
+        margin-left: 6vw; 
+        &:hover{
+            color:#02574293;
+            transition: 1s;
+            text-shadow: 0;
+        }
+    }   
+   }
+}  
