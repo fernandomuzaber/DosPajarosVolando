@@ -1,0 +1,3 @@
+agregar:
+Direccion (maps)
+Actualizar fotos y lugares
