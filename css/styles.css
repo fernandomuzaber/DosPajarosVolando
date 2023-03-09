@@ -15,7 +15,7 @@ html{
     src: url("../fonts/UbuntuCondensed-Regular.ttf");
 }
 body {
-    background-color: #53ca98;
+    background-color: #022c22ec;
     font-family: tipografia, sans serif;
     font-size: 1,8rem;
 }
@@ -107,7 +107,7 @@ body {
 /*Aca empieza el header*/
 
 .color__nav{
-    background-color: #53ca98;
+    background-color: #022c22ec;
     text-align: center;
     justify-content: center
 
@@ -123,7 +123,7 @@ body {
 }
 
 .barraNavegacion li{
-    background-color: #53ca98;
+    background-color: #022c22ec;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -154,7 +154,7 @@ body {
 
 /*Aca empieza el main*/
 .color__cabecera{
-    background-color: #53ca98;
+    background-color: #022c22ec;
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
@@ -208,7 +208,7 @@ h1{
 /*Aca comienza las entradas de texto o blog*/
 
 .blog{
-    background-color: #53ca98;
+    background-color: #022c22ec;
     /* display: flex; */
     /* flex-direction: column; */
     /* flex-wrap:wrap; */
@@ -228,7 +228,7 @@ h1{
 }
 .blog__subtitulo{
 
-        color: #204580;
+        color: white;
         text-align: center;
         font-size: 1.4rem;
         text-decoration: underline;
@@ -238,7 +238,7 @@ h1{
 }
 
 .blog__contenedor{
-    color: #204580;
+    color: white;
     top: 25px;
     font-size: 30px;
     display: flex;
@@ -265,7 +265,7 @@ h1{
 }
 
 .blog__entradas{
-    color: #204580;
+    color: #white;
     top: 25px;
     font-size: 1rem;
     display: flex;
