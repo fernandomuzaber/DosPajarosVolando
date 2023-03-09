@@ -16,3 +16,5 @@ GITHUB
 ## Demo
 Para probar mi sitio ingrese en :https://fmuzaber.github.io/DosPajarosVolando/
 <video src="./images/video.mp4"></video>
+<video src="/images/video.mp4"></video>
+<video src="video.mp4"></video>
