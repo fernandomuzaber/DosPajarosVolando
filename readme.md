@@ -11,5 +11,8 @@ GIT
 GITHUB
 
 ## Demo(h2)
-Para probar mi sitio ingrese en :https://fmuzaber.github.io/DosPajarosVolando/
 <img src="./images/video2.gif">
+
+
+
+Para probar mi sitio ingrese en :https://fmuzaber.github.io/DosPajarosVolando/
