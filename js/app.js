@@ -1,4 +1,4 @@
-const productos = [new Producto(1, 'Alaska', 7500, 0), new Producto(2, 'Perú', 1500, 0), new Producto(3, 'Cuba', 3000, 0)]; //expresado en USD
+let productos = [new Producto(1, 'Alaska', 7500, 0), new Producto(2, 'Perú', 1500, 0), new Producto(3, 'Cuba', 3000, 0)]; //expresado en USD
 
 const boton1 = document.getElementById("boton--Alaska");
 const boton2 = document.getElementById("boton--Peru");
@@ -38,12 +38,15 @@ boton3.addEventListener('click' , () =>  {
   mostrarArray();
 });
 
+
 vaciarBtn.addEventListener('click', () => {
-  productos.forEach((producto) => {
-    producto.cantidad = 0;
-  });
-  mostrarArray();
-});
+    productos.forEach((producto) => {
+      producto.cantidad = 0;
+    });
+    localStorage.setItem('productos', JSON.stringify(productos));
+    mostrarArray();
+    }); 
+
 
 function mostrarArray() {
   const tabla = document.getElementById('producto');
@@ -55,7 +58,6 @@ function mostrarArray() {
     tabla.innerHTML+= `
       <tr>
         <th>${contador}</th>
-        <th>${producto.id}</th>
         <th>${producto.nombre}</th>
         <th>${producto.precio}</th>
         <th>${producto.cantidad}</th>
@@ -73,8 +75,7 @@ function mostrarArray() {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td>${productos.reduce((total, item) => total + item.precio,0)}</td>
+                    <td id="total">${productos.reduce((total, item) => total + item.subTotal(),0)}</td>
                   `;
     tabla.appendChild(tr);
   }
