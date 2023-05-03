@@ -9,8 +9,10 @@ boton1.addEventListener('click' , () =>  {
   const producto = productos.find((producto)=> {
     return producto.id === +boton1.dataset.id
   });
-  producto.cantidad += 1;
-  productos.push(producto);
+  if (producto) {
+    producto.cantidad += 1;
+    productos.push(producto);
+  }
   mostrarArray();
 });
 
@@ -18,8 +20,10 @@ boton2.addEventListener('click' , () =>  {
   const producto = productos.find((producto)=> {
     return producto.id === +boton2.dataset.id
   });
-  producto.cantidad += 1;
-  productos.push(producto);
+  if (producto) {
+    producto.cantidad += 1;
+    productos.push(producto);
+  }
   mostrarArray();
 });
 
@@ -27,17 +31,17 @@ boton3.addEventListener('click' , () =>  {
   const producto = productos.find((producto)=> {
     return producto.id === +boton3.dataset.id
   });
-  producto.cantidad += 1;
-  productos.push(producto);
+  if (producto) {
+    producto.cantidad += 1;
+    productos.push(producto);
+  }
   mostrarArray();
 });
 
-boton3.addEventListener('click' , () =>  {
-  const producto = productos.find((producto)=> {
-    return producto.id === +boton3.dataset.id
+vaciarBtn.addEventListener('click', () => {
+  productos.forEach((producto) => {
+    producto.cantidad = 0;
   });
-  producto.cantidad += 1;
-  productos.push(producto);
   mostrarArray();
 });
 
@@ -47,6 +51,7 @@ function mostrarArray() {
   let contador = 1;
 
   productos.forEach((producto) => {
+    if (producto.cantidad > 0) {
     tabla.innerHTML+= `
       <tr>
         <th>${contador}</th>
@@ -54,12 +59,16 @@ function mostrarArray() {
         <th>${producto.nombre}</th>
         <th>${producto.precio}</th>
         <th>${producto.cantidad}</th>
+        <th>${producto.subTotal()}</th>
+        <th></th>
       </tr>
     `;
     contador++;
+  }
   });
   tr = document.createElement('tr');
   tr.innerHTML = `<th></th>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
