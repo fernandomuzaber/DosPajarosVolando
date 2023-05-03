@@ -1,53 +1,72 @@
-// let productos = [];
-
-/* function cargarUnProducto() {
-  const nuevoProducto = new Producto();
-  nuevoProducto.nombre = prompt("Ingrese el nombre del destino");
-  nuevoProducto.precio = parseFloat(prompt("Ingrese un precio"));
-  nuevoProducto.cantidad = Number(prompt("Ingrese la cantidad de personas"));
-
-  productos.push(nuevoProducto);
-} */
-const productos = [new Producto('1', 'Alaska', 7500, 0), new Producto(2, 'Perú', 1500, 0), new Producto(3, 'Cuba', 3000, 0)]; //expresado en USD
-
-const cargarProductos = () => {
-  let seguir;
-  do {
-    cargarUnProducto();
-    seguir = prompt("Desea ingresar otro destino si/no");
-  } while (seguir == "si");
-};
+const productos = [new Producto(1, 'Alaska', 7500, 0), new Producto(2, 'Perú', 1500, 0), new Producto(3, 'Cuba', 3000, 0)]; //expresado en USD
 
 const boton1 = document.getElementById("boton--Alaska");
 const boton2 = document.getElementById("boton--Peru");
 const boton3 = document.getElementById("boton--Cuba");
+const vaciarBtn = document.getElementById('vaciarCarrito--btn');
 
-boton1.addEventListener(('click') , () =>  {
-  productos.find((producto), () => {
-    
-
+boton1.addEventListener('click' , () =>  {
+  const producto = productos.find((producto)=> {
+    return producto.id === +boton1.dataset.id
   });
-
+  producto.cantidad += 1;
+  productos.push(producto);
+  mostrarArray();
 });
 
+boton2.addEventListener('click' , () =>  {
+  const producto = productos.find((producto)=> {
+    return producto.id === +boton2.dataset.id
+  });
+  producto.cantidad += 1;
+  productos.push(producto);
+  mostrarArray();
+});
+
+boton3.addEventListener('click' , () =>  {
+  const producto = productos.find((producto)=> {
+    return producto.id === +boton3.dataset.id
+  });
+  producto.cantidad += 1;
+  productos.push(producto);
+  mostrarArray();
+});
+
+boton3.addEventListener('click' , () =>  {
+  const producto = productos.find((producto)=> {
+    return producto.id === +boton3.dataset.id
+  });
+  producto.cantidad += 1;
+  productos.push(producto);
+  mostrarArray();
+});
 
 function mostrarArray() {
-  let ticket = "";
-  let totalTicket = 0;
+  const tabla = document.getElementById('producto');
+  tabla.innerHTML = '';
+  let contador = 1;
+
   productos.forEach((producto) => {
-    ticket =
-      ticket +
-      `Nombre : ${producto.nombre} \n Precio: ${producto.precio}  \n Cantidad: ${producto.cantidad} \n Sutbtotal : ${producto.subTotal()} \n\n`;
+    tabla.innerHTML+= `
+      <tr>
+        <th>${contador}</th>
+        <th>${producto.id}</th>
+        <th>${producto.nombre}</th>
+        <th>${producto.precio}</th>
+        <th>${producto.cantidad}</th>
+      </tr>
+    `;
+    contador++;
   });
+  tr = document.createElement('tr');
+  tr.innerHTML = `<th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>${productos.reduce((total, item) => total + item.precio,0)}</td>
+                  `;
+    tabla.appendChild(tr);
+  }
 
-  totalTicket =
-    totalTicket +
-    productos.reduce((total, producto) => {
-      return total + producto.subTotal();
-    }, 0);
-
-  alert(ticket + `Total : ${totalTicket} `);
-}
-
-cargarProductos();
-mostrarArray();

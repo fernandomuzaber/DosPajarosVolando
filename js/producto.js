@@ -5,12 +5,13 @@ class Producto {
   cantidad;
   
 
-constructor(id, nombre, precio){
-  this.id = id;
-  this.nombre = nombre;
-  this.precio = precio;
+  constructor(id, nombre, precio, cantidad){
+    this.id = id;
+    this.nombre = nombre;
+    this.precio = precio;
+    this.cantidad = cantidad;
 
-}
+  }
 
   subTotal = () => {
     return this.precio * this.cantidad;
