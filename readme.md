@@ -1,6 +1,6 @@
-# Proyecto desarrollo web Dos Pajaros Volando(h1)
+# Proyecto desarrollo web Dos Pajaros Volando
 
-Este proyecto consiste en crear una pagina web desde 0 usando html y css.
+Este proyecto consiste en crear una pagina web desde 0 usando HTML / CSS / JS.
 Tecnologias usadas:
 HTML5
 CSS3
@@ -10,6 +10,9 @@ CSS3
 GIT
 GITHUB
 
-## Demo(h2)
+## Demo
+<img src="./images/video2.gif">
+
+
+
 Para probar mi sitio ingrese en :https://fmuzaber.github.io/DosPajarosVolando/
-<img src="./images/imagenReadme.png">
