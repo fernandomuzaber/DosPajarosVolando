@@ -15,7 +15,7 @@ html{
     src: url("../fonts/UbuntuCondensed-Regular.ttf");
 }
 body {
-    background-color: #022c22ec;
+    background-color: #3693d1;
     font-family: tipografia, sans serif;
     font-size: 1,8rem;
 }
@@ -107,7 +107,7 @@ body {
 /*Aca empieza el header*/
 
 .color__nav{
-    background-color: #022c22ec;
+    background-color: #3693d1;
     text-align: center;
     justify-content: center
 
@@ -123,7 +123,7 @@ body {
 }
 
 .barraNavegacion li{
-    background-color: #022c22ec;
+    background-color: #3693d1;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -140,21 +140,21 @@ body {
 .barraNavegacion a {
     color: white;
     text-decoration: none;
-    text-shadow: 2px 2px 2px #FF7C70;
+    text-shadow: 2px 2px 2px #02574293;
     display:flex;
     flex-wrap:wrap;
     text-align: center;
     justify-content: center;
 }
 .barraNavegacion a:hover{
-    color:#FF7C70;
+    color:#02574293;
     transition: 1s;
     text-shadow: 0;
 }
 
 /*Aca empieza el main*/
 .color__cabecera{
-    background-color: #022c22ec;
+    background-color: #3693d1;
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
@@ -208,7 +208,7 @@ h1{
 /*Aca comienza las entradas de texto o blog*/
 
 .blog{
-    background-color: #022c22ec;
+    background-color: #3693d1;
     /* display: flex; */
     /* flex-direction: column; */
     /* flex-wrap:wrap; */
@@ -265,7 +265,7 @@ h1{
 }
 
 .blog__entradas{
-    color: #white;
+    color: white;
     top: 25px;
     font-size: 1rem;
     display: flex;
@@ -292,20 +292,16 @@ h1{
 
 .nosotrxs__card{
     display: flex;
-    flex-direction: row;
-    justify-items: space-around;
-    align-items: center;
+    flex-direction: column;
     padding: 0.75rem;
     margin: 1rem;
-    margin-top: 5rem;
-    border:  double 0.5rem #FF7C70;
+    margin-top: 2rem;
     overflow: hidden;
 }
-
 .nosotrxs__lista li{
     color: white;
-    list-style: lower-greek;
-    margin:2rem;
+    font-size: 1.5rem;
+    margin:1.5rem;
 }
 .nosotrxs__imagen{
     margin: 1rem;
