@@ -89,8 +89,10 @@ function mostrarArray() {
     tabla.appendChild(tr);
   }
 
-
 function obtenerProductos() {
   productos = JSON.parse(localStorage.getItem('productos')) || [];
 }
-  
+
+document.addEventListener('DOMContentLoaded', () => {
+  obtenerProductos();
+});
