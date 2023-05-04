@@ -1,9 +1,14 @@
 let productos = [new Producto(1, 'Alaska', 7500, 0), new Producto(2, 'Perú', 1500, 0), new Producto(3, 'Cuba', 3000, 0)]; //expresado en USD
+/* const productosJSON  = [{id: 1, nombre: "Alaska", precio: 7500, cantidad, 0 },
+                        {id: 2, nombre: "Peru", precio: 1500, cantidad, 0 },
+                        {id: 3, nombre: "Cuba", precio: 3000, cantidad, 0 }] */
+  
 
 const boton1 = document.getElementById("boton--Alaska");
 const boton2 = document.getElementById("boton--Peru");
 const boton3 = document.getElementById("boton--Cuba");
 const vaciarBtn = document.getElementById('vaciarCarrito--btn');
+
 
 boton1.addEventListener('click' , () =>  {
   const producto = productos.find((producto)=> {
@@ -12,7 +17,7 @@ boton1.addEventListener('click' , () =>  {
   if (producto) {
     producto.cantidad += 1;
     productos.push(producto);
-    localStorage.setItem('productos', JSON.stringify(productos));1
+    localStorage.setItem('productos', JSON.stringify(productos));
   }
   mostrarArray();
 });
@@ -71,6 +76,7 @@ function mostrarArray() {
     contador++;
   }
   });
+  
   tr = document.createElement('tr');
   tr.innerHTML = `<th></th>
                     <td></td>
@@ -83,3 +89,6 @@ function mostrarArray() {
     tabla.appendChild(tr);
   }
 
+
+
+  
