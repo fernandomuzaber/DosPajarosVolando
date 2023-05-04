@@ -12,6 +12,7 @@ boton1.addEventListener('click' , () =>  {
   if (producto) {
     producto.cantidad += 1;
     productos.push(producto);
+    localStorage.setItem('productos', JSON.stringify(productos));1
   }
   mostrarArray();
 });
@@ -23,6 +24,7 @@ boton2.addEventListener('click' , () =>  {
   if (producto) {
     producto.cantidad += 1;
     productos.push(producto);
+    localStorage.setItem('productos', JSON.stringify(productos));
   }
   mostrarArray();
 });
@@ -34,6 +36,7 @@ boton3.addEventListener('click' , () =>  {
   if (producto) {
     producto.cantidad += 1;
     productos.push(producto);
+    localStorage.setItem('productos', JSON.stringify(productos));
   }
   mostrarArray();
 });
