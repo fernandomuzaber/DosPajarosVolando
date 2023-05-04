@@ -90,5 +90,7 @@ function mostrarArray() {
   }
 
 
-
+function obtenerProductos() {
+  productos = JSON.parse(localStorage.getItem('productos')) || [];
+}
   
