@@ -2,16 +2,7 @@
 
 Este proyecto consiste en crear una pagina web desde cero.
 Tecnologias usadas:
-HTML5
-CSS3
-    GRID
-    FLEXBOX
-    BOX-SIZING
-    SASS
-    SCSS
-    NODE.JS
-GIT
-GITHUB
+HTML5 - CSS3 - GRID -FLEXBOX -BOX-SIZING -SASS -SCSS -NODE.JS - GIT -GITHUB - JAVASCRIPT
 
 ## Demo
 Para probar mi sitio ingrese en :https://fmuzaber.github.io/DosPajarosVolando/
