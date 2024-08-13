@@ -10,4 +10,4 @@ Para probar mi sitio ingrese en :https://fernandomuzaber.github.io/DosPajarosVol
 <img src="./images/video2.gif"></img>
 
 Página operativa:
-[https://dospajarosvolando.com](https://fernandomuzaber.github.io/DosPajarosVolando/)
+https://fernandomuzaber.github.io/DosPajarosVolando/
