@@ -106,7 +106,7 @@ body {
 /*Aca empieza el header*/
 
 .color__nav{
-    background-color: #53ca98;
+    background-color: #204580;
 
 }
 .barraNavegacion{
@@ -117,7 +117,7 @@ body {
 }
 
 .barraNavegacion li{
-    background-color: #53ca98;
+    background-color: #204580;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -144,7 +144,7 @@ body {
 
 /*Aca empieza el main*/
 .color__cabecera{
-    background-color: #53ca98;
+    background-color: #204580;
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
@@ -198,7 +198,7 @@ h1{
 /*Aca comienza las entradas de texto o blog*/
 
 .blog{
-    background-color: #53ca98;
+    background-color: #204580;
     /* display: flex; */
     /* flex-direction: column; */
     /* flex-wrap:wrap; */
