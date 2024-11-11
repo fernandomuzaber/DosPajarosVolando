@@ -11,13 +11,13 @@ html {
   src: url("../fonts/UbuntuCondensed-Regular.ttf"); }
 
 body {
-  background-color: #000811;
+  background-color: #033c7c;
   font-family: tipografia, sans serif;
   font-size: 1rem;
   color: #022c22ec; }
 
 .color__nav {
-  background-color: #000811; }
+  background-color: #033c7c; }
 
 .barraNavegacion {
   display: flex;
@@ -26,7 +26,7 @@ body {
   font-size: 0;
   width: 100%; }
   .barraNavegacion li {
-    background-color: #000811;
+    background-color: #033c7c;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -76,7 +76,7 @@ body {
         width: 50%; } }
 
 .color__cabecera {
-  background-color: #000811;
+  background-color: #033c7c;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
